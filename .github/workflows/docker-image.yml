@@ -42,7 +42,7 @@ jobs:
       uses: docker/build-push-action@f2a1d5e99d037542a71f64918e516c093c6f3fc4
       with:
         context: .
-        dockerfile: src/SolarEdge.Monitoring.Demo/Dockerfile
+        file: src/SolarEdge.Monitoring.Demo/Dockerfile
         tags: ${{ steps.meta.output.tags }}
         labels: ${{ steps.meta.outputs.labels }}
 
